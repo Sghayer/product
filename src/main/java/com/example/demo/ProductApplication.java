@@ -22,7 +22,7 @@ public class ProductApplication {
 	CommandLineRunner start(product_repository productRepository) {
 		
 		return args -> {
-			productRepository.save(new product(null, "PC lenovo", 2400, "C:\\Users\\Omaym\\Downloads"));
+			productRepository.save(new product(null, "PC lenovo", 2400,"https://res.cloudinary.com/dd4ndu38b/image/upload/cld-sample.jpg"));
 			productRepository.save(new product(null, "PC hp", 3000, "C:\\Users\\Omaym\\Downloads"));
 			productRepository.save(new product(null, "PC Asus", 1900, "C:\\Users\\Omaym\\Downloads"));
 			productRepository.findAll().forEach(cp ->{
